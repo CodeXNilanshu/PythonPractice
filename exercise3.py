@@ -24,26 +24,29 @@
 # Display a message indicating whether access is granted or denied.
 
 
-We will redo it later again
-
-
 user_input = input('Enter the credentials: ')
 
 deny_message = 'Access Denied'
 grant_message = 'Access Granted'
 
-user_input_value = 69 or 420 or 69420
+int_user_input = int(user_input)
+
+user_input_value = int_user_input == 69 or int_user_input ==  420 or int_user_input ==  69420 #//true/false
 
 user_input_length = (len(user_input))
 
 checking = int(user_input_length) == 4 or user_input_value
 
+not_checking =  not checking
 
-if user_input (int(user_input_length) == 4 or user_input_value):
-    print(grant_message)
-else:
-    print(deny_message)
+print(grant_message * checking + deny_message * not_checking )
 
+
+### It works but I have to write the program without if else condition so I am using above method
+# if checking:
+#     print(grant_message)
+# else:
+#     print(deny_message)
 
 
 
