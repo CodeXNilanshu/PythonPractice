@@ -107,13 +107,43 @@
 
 ### A "iter" is a variable that takes the value of each item in the
 
-for i in range(1,5):
-    print(i)
+# for i in range(1,5):
+#     print(i)
+#
+# ### unlike while loop we don't have to increment the value of i or anything
+#
+# print('abcd')
+#
+# for i in range(1,5,2):
+#     print(i)
 
-### unlike while loop we don't have to increment the value of i or anything
 
-print('abcd')
+# names = ['Nishu', 'CodingGod', 'Zoro', 'Nami']
 
-for i in range(1,5,2):
-    print(i)
+# for name in names:
+#     print(name)
+
+###  The above code loop through the list while the the below code loop through the name characters
+name = 'Rivaan'
+
+# for char in name: # This one prints the characters
+#     print (char)
+
+# for i in range(len(name)): #This one prints the characters as well as index of those characters
+#     print(i, name[i])
+
+### We can use enumerate function instead of above code to do the same task
+### enumerate() -> count/index, char
+
+# for i, char in enumerate(name):
+#     print(i, char)
+
+
+"""Difference between For and While loop"""
+### for loop are used when we need to loop over are known before hand
+### while loop are used when no. of elements not known before hand
+
+### for loop : No condition involved, used when we need to go over a sequence
+### while loop : Condition involved
+
 
